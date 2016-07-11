@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/mux
+END
+muxedit.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/mux/muxedit.c
+END
+anim_encode.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/mux/anim_encode.c
+END
+muxread.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/mux/muxread.c
+END
+muxinternal.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/mux/muxinternal.c
+END
+muxi.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/mux/muxi.h
+END

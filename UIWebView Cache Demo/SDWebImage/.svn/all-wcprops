@@ -1,0 +1,203 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/SDWebImage
+END
+MKAnnotationView+WebCache.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/app-ios-buyer-phone/!svn/ver/1830/trunk/WebImage/SDWebImage/MKAnnotationView+WebCache.h
+END
+SDImageCache.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/app-ios-buyer-phone/!svn/ver/1830/trunk/WebImage/SDWebImage/SDImageCache.h
+END
+SDWebImageDecoder.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/app-ios-buyer-phone/!svn/ver/1830/trunk/WebImage/SDWebImage/SDWebImageDecoder.h
+END
+MKAnnotationView+WebCache.m
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/app-ios-buyer-phone/!svn/ver/1830/trunk/WebImage/SDWebImage/MKAnnotationView+WebCache.m
+END
+SDImageCache.m
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/app-ios-buyer-phone/!svn/ver/1830/trunk/WebImage/SDWebImage/SDImageCache.m
+END
+SDWebImageDecoder.m
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/app-ios-buyer-phone/!svn/ver/1830/trunk/WebImage/SDWebImage/SDWebImageDecoder.m
+END
+SDWebImageManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/app-ios-buyer-phone/!svn/ver/1830/trunk/WebImage/SDWebImage/SDWebImageManager.h
+END
+UIButton+WebCache.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/app-ios-buyer-phone/!svn/ver/1830/trunk/WebImage/SDWebImage/UIButton+WebCache.h
+END
+SDWebImageManager.m
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/app-ios-buyer-phone/!svn/ver/1830/trunk/WebImage/SDWebImage/SDWebImageManager.m
+END
+SDWebImageDownloaderOperation.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/app-ios-buyer-phone/!svn/ver/1830/trunk/WebImage/SDWebImage/SDWebImageDownloaderOperation.h
+END
+UIImageView+WebCache.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/app-ios-buyer-phone/!svn/ver/1830/trunk/WebImage/SDWebImage/UIImageView+WebCache.h
+END
+UIImage+WebP.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/app-ios-buyer-phone/!svn/ver/1830/trunk/WebImage/SDWebImage/UIImage+WebP.h
+END
+UIButton+WebCache.m
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/app-ios-buyer-phone/!svn/ver/1830/trunk/WebImage/SDWebImage/UIButton+WebCache.m
+END
+SDWebImageDownloaderOperation.m
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/app-ios-buyer-phone/!svn/ver/1830/trunk/WebImage/SDWebImage/SDWebImageDownloaderOperation.m
+END
+UIImageView+WebCache.m
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/app-ios-buyer-phone/!svn/ver/1830/trunk/WebImage/SDWebImage/UIImageView+WebCache.m
+END
+UIImage+WebP.m
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/SDWebImage/UIImage+WebP.m
+END
+NSData+ImageContentType.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/app-ios-buyer-phone/!svn/ver/1830/trunk/WebImage/SDWebImage/NSData+ImageContentType.h
+END
+SDWebImageDownloader.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/app-ios-buyer-phone/!svn/ver/1830/trunk/WebImage/SDWebImage/SDWebImageDownloader.h
+END
+UIView+WebCacheOperation.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/app-ios-buyer-phone/!svn/ver/1830/trunk/WebImage/SDWebImage/UIView+WebCacheOperation.h
+END
+NSData+ImageContentType.m
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/app-ios-buyer-phone/!svn/ver/1830/trunk/WebImage/SDWebImage/NSData+ImageContentType.m
+END
+SDWebImageDownloader.m
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/app-ios-buyer-phone/!svn/ver/1830/trunk/WebImage/SDWebImage/SDWebImageDownloader.m
+END
+UIView+WebCacheOperation.m
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/app-ios-buyer-phone/!svn/ver/1830/trunk/WebImage/SDWebImage/UIView+WebCacheOperation.m
+END
+UIImageView+HighlightedWebCache.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/app-ios-buyer-phone/!svn/ver/1830/trunk/WebImage/SDWebImage/UIImageView+HighlightedWebCache.h
+END
+SDWebImageCompat.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/app-ios-buyer-phone/!svn/ver/1830/trunk/WebImage/SDWebImage/SDWebImageCompat.h
+END
+UIImageView+HighlightedWebCache.m
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/app-ios-buyer-phone/!svn/ver/1830/trunk/WebImage/SDWebImage/UIImageView+HighlightedWebCache.m
+END
+UIImage+MultiFormat.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/app-ios-buyer-phone/!svn/ver/1830/trunk/WebImage/SDWebImage/UIImage+MultiFormat.h
+END
+SDWebImagePrefetcher.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/app-ios-buyer-phone/!svn/ver/1830/trunk/WebImage/SDWebImage/SDWebImagePrefetcher.h
+END
+SDWebImageCompat.m
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/app-ios-buyer-phone/!svn/ver/1830/trunk/WebImage/SDWebImage/SDWebImageCompat.m
+END
+UIImage+GIF.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/app-ios-buyer-phone/!svn/ver/1830/trunk/WebImage/SDWebImage/UIImage+GIF.h
+END
+UIImage+MultiFormat.m
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/app-ios-buyer-phone/!svn/ver/1830/trunk/WebImage/SDWebImage/UIImage+MultiFormat.m
+END
+SDWebImagePrefetcher.m
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/app-ios-buyer-phone/!svn/ver/1830/trunk/WebImage/SDWebImage/SDWebImagePrefetcher.m
+END
+UIImage+GIF.m
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/app-ios-buyer-phone/!svn/ver/1830/trunk/WebImage/SDWebImage/UIImage+GIF.m
+END
+SDWebImageOperation.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/app-ios-buyer-phone/!svn/ver/1830/trunk/WebImage/SDWebImage/SDWebImageOperation.h
+END

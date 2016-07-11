@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/dec
+END
+tree.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/dec/tree.c
+END
+alphai.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/dec/alphai.h
+END
+idec.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/dec/idec.c
+END
+vp8li.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/dec/vp8li.h
+END
+io.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/dec/io.c
+END
+buffer.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/dec/buffer.c
+END
+webpi.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/dec/webpi.h
+END
+vp8.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/dec/vp8.c
+END
+decode_vp8.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/dec/decode_vp8.h
+END
+alpha.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/dec/alpha.c
+END
+quant.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/dec/quant.c
+END
+vp8l.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/dec/vp8l.c
+END
+frame.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/dec/frame.c
+END
+vp8i.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/dec/vp8i.h
+END
+webp.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/dec/webp.c
+END
+common.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/dec/common.h
+END

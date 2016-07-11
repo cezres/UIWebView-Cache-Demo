@@ -1,0 +1,161 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/utils
+END
+bit_reader.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/utils/bit_reader.c
+END
+rescaler.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/utils/rescaler.c
+END
+utils.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/utils/utils.c
+END
+huffman_encode.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/utils/huffman_encode.c
+END
+color_cache.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/utils/color_cache.c
+END
+quant_levels.c
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/utils/quant_levels.c
+END
+endian_inl.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/utils/endian_inl.h
+END
+bit_reader.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/utils/bit_reader.h
+END
+rescaler.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/utils/rescaler.h
+END
+utils.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/utils/utils.h
+END
+huffman_encode.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/utils/huffman_encode.h
+END
+color_cache.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/utils/color_cache.h
+END
+bit_reader_inl.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/utils/bit_reader_inl.h
+END
+quant_levels.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/utils/quant_levels.h
+END
+thread.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/utils/thread.c
+END
+filters.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/utils/filters.c
+END
+bit_writer.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/utils/bit_writer.c
+END
+thread.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/utils/thread.h
+END
+filters.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/utils/filters.h
+END
+quant_levels_dec.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/utils/quant_levels_dec.c
+END
+bit_writer.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/utils/bit_writer.h
+END
+random.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/utils/random.c
+END
+quant_levels_dec.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/utils/quant_levels_dec.h
+END
+huffman.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/utils/huffman.c
+END
+random.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/utils/random.h
+END
+huffman.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/utils/huffman.h
+END

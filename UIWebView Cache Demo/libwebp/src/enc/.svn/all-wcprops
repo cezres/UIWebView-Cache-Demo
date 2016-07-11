@@ -1,0 +1,173 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/enc
+END
+tree.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/enc/tree.c
+END
+delta_palettization.c
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/enc/delta_palettization.c
+END
+histogram.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/enc/histogram.h
+END
+delta_palettization.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/enc/delta_palettization.h
+END
+config.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/enc/config.c
+END
+vp8li.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/enc/vp8li.h
+END
+cost.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/enc/cost.c
+END
+picture_rescale.c
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/enc/picture_rescale.c
+END
+picture.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/enc/picture.c
+END
+near_lossless.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/enc/near_lossless.c
+END
+cost.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/enc/cost.h
+END
+picture_psnr.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/enc/picture_psnr.c
+END
+backward_references.c
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/enc/backward_references.c
+END
+picture_csp.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/enc/picture_csp.c
+END
+token.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/enc/token.c
+END
+vp8enci.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/enc/vp8enci.h
+END
+analysis.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/enc/analysis.c
+END
+webpenc.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/enc/webpenc.c
+END
+backward_references.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/enc/backward_references.h
+END
+filter.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/enc/filter.c
+END
+alpha.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/enc/alpha.c
+END
+syntax.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/enc/syntax.c
+END
+quant.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/enc/quant.c
+END
+iterator.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/enc/iterator.c
+END
+vp8l.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/enc/vp8l.c
+END
+frame.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/enc/frame.c
+END
+picture_tools.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/enc/picture_tools.c
+END
+histogram.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/enc/histogram.c
+END

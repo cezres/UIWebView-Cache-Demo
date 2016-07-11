@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/webp
+END
+mux.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/webp/mux.h
+END
+encode.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/webp/encode.h
+END
+mux_types.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/webp/mux_types.h
+END
+demux.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/webp/demux.h
+END
+decode.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/webp/decode.h
+END
+format_constants.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/webp/format_constants.h
+END
+types.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/webp/types.h
+END
+extras.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/app-ios-buyer-phone/!svn/ver/1832/trunk/WebImage/libwebp/src/webp/extras.h
+END
