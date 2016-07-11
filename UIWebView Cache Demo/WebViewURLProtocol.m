@@ -11,6 +11,7 @@
 #import <UIKit/UIKit.h>
 
 static NSString *URLProtocolHandledKey = @"WebViewURLHasHandle";
+static NSTimeInterval CacheTimeout = 60 * 60 * 24 * 7;
 
 
 @interface WebViewURLProtocol ()
@@ -97,7 +98,21 @@ static NSString *URLProtocolHandledKey = @"WebViewURLHasHandle";
 #pragma mark - Tool
 
 - (NSData *)cacheForRequest:(NSURLRequest *)request; {
-    return [NSData dataWithContentsOfFile:[self cachePathWithRequest:request]];
+    NSString *path = [self cachePathWithRequest:request];
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+    NSDictionary *fileAttributes = [[NSFileManager defaultManager] fileAttributesAtPath:path traverseLink:true];
+#pragma clang diagnostic pop
+    if (!fileAttributes) {
+        return NULL;
+    }
+    NSDate *fileModificationDate = [fileAttributes valueForKey:NSFileModificationDate];
+    NSTimeInterval timeInterval = [[NSDate date] timeIntervalSinceDate:fileModificationDate];
+    if (timeInterval > CacheTimeout) {
+        printf("缓存超时");
+        return NULL;
+    }
+    return [NSData dataWithContentsOfFile:path];
 }
 
 - (NSString *)cachePathWithRequest:(NSURLRequest *)request; {
