@@ -10,4 +10,6 @@
 
 @interface WebViewURLProtocol : NSURLProtocol
 
++ (void)removeAllCache;
+
 @end

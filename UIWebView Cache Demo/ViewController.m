@@ -31,6 +31,7 @@
     [self.view addSubview:webView];
     [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://m.d2cmall.com/page/summersale"]]];
     
+    
 }
 
 - (void)didReceiveMemoryWarning {

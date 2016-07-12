@@ -9,9 +9,12 @@
 #import "WebViewURLProtocol.h"
 #import "NSString+MD5.h"
 #import <UIKit/UIKit.h>
+#import "UIImage+WebP.h"
 
 static NSString *URLProtocolHandledKey = @"WebViewURLHasHandle";
 static NSTimeInterval CacheTimeout = 60 * 60 * 24 * 7;
+
+static NSString *WebViewCachesDirectory;
 
 
 @interface WebViewURLProtocol ()
@@ -27,9 +30,13 @@ static NSTimeInterval CacheTimeout = 60 * 60 * 24 * 7;
 
 @implementation WebViewURLProtocol
 
++ (void)removeAllCache; {
+    
+}
+
 
 + (BOOL)canInitWithRequest:(NSURLRequest *)request; {
-    if ([request.URL.absoluteString rangeOfString:@"png"].length || [request.URL.absoluteString rangeOfString:@"jpg"].length) {
+    if ([request.URL.absoluteString rangeOfString:@".png"].length || [request.URL.absoluteString rangeOfString:@".jpg"].length) {
         if ([NSURLProtocol propertyForKey:URLProtocolHandledKey inRequest:request]) {
             return NO;
         }
@@ -39,8 +46,30 @@ static NSTimeInterval CacheTimeout = 60 * 60 * 24 * 7;
 }
 
 
-+ (NSURLRequest *) canonicalRequestForRequest:(NSURLRequest *)request {
-    return request;
++ (NSURLRequest *)canonicalRequestForRequest:(NSURLRequest *)request; {
+    /**
+     *  如果是D2C的图片链接，添加webp参数
+     */
+    if ([request.URL.absoluteString hasPrefix:@"http://static.d2c.cn"]) {
+        NSString *URLString = request.URL.absoluteString;
+        if ([URLString rangeOfString:@"?"].length) {
+            URLString = [URLString componentsSeparatedByString:@"?"][0];
+        }
+        
+        
+        if ([URLString rangeOfString:@"!"].length) {
+            if ([URLString rangeOfString:@"format"].length <= 0) {
+                URLString = [URLString stringByAppendingString:@"/format/webp"];
+            }
+        }
+        else {
+            URLString = [URLString stringByAppendingString:@"!/format/webp"];
+        }
+        return [NSURLRequest requestWithURL:[NSURL URLWithString:URLString]];
+    }
+    else {
+        return request;
+    }
 }
 
 - (void)startLoading; {
@@ -63,11 +92,9 @@ static NSTimeInterval CacheTimeout = 60 * 60 * 24 * 7;
         [self.client URLProtocolDidFinishLoading:self];
     }
     else {
-        printf("Network\t\t%s\n", [mutableReqeust.URL.absoluteString cStringUsingEncoding:NSUTF8StringEncoding]);
         _mutableData = [NSMutableData data];
         _connection = [NSURLConnection connectionWithRequest:mutableReqeust delegate:self];
     }
-
 }
 
 - (void)stopLoading {
@@ -82,10 +109,23 @@ static NSTimeInterval CacheTimeout = 60 * 60 * 24 * 7;
 
 - (void)connection:(NSURLConnection *)connection didReceiveData:(nonnull NSData *)data; {
     [_mutableData appendBytes:data.bytes length:data.length];
-    [self.client URLProtocol:self didLoadData:data];
+//    [self.client URLProtocol:self didLoadData:data];
 }
 
 - (void) connectionDidFinishLoading:(NSURLConnection *)connection {
+    printf("Network\t\t%s\n", [self.request.URL.absoluteString cStringUsingEncoding:NSUTF8StringEncoding]);
+    
+    if ([self.request.URL.absoluteString rangeOfString:@"webp"].length) {
+        UIImage *image = [UIImage sd_imageWithWebPData:_mutableData];
+        if (image) {
+            _mutableData = (NSMutableData *)UIImagePNGRepresentation(image);
+        }
+        else {
+            printf("Error\t\t%s\n", [self.request.URL.absoluteString cStringUsingEncoding:NSUTF8StringEncoding]);
+        }
+    }
+    
+    [self.client URLProtocol:self didLoadData:_mutableData];
     [self.client URLProtocolDidFinishLoading:self];
     [self storeCache:_mutableData atRequest:self.request];
 }
@@ -109,21 +149,30 @@ static NSTimeInterval CacheTimeout = 60 * 60 * 24 * 7;
     NSDate *fileModificationDate = [fileAttributes valueForKey:NSFileModificationDate];
     NSTimeInterval timeInterval = [[NSDate date] timeIntervalSinceDate:fileModificationDate];
     if (timeInterval > CacheTimeout) {
-        printf("缓存超时");
+        // 缓存时间超时
         return NULL;
     }
     return [NSData dataWithContentsOfFile:path];
 }
 
 - (NSString *)cachePathWithRequest:(NSURLRequest *)request; {
-    NSString *documentsPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0];
+    if (!WebViewCachesDirectory) {
+        NSString *cachesDirectory = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES)[0];
+        WebViewCachesDirectory = [NSString stringWithFormat:@"%@/WebView", cachesDirectory];
+        BOOL isDirectory = NO;
+        [[NSFileManager defaultManager] fileExistsAtPath:WebViewCachesDirectory isDirectory:&isDirectory];
+        if (!isDirectory) {
+            [[NSFileManager defaultManager] createDirectoryAtPath:WebViewCachesDirectory withIntermediateDirectories:YES attributes:NULL error:NULL];
+        }
+    }
     NSString *urlString = self.request.URL.absoluteString;
-    return [NSString stringWithFormat:@"%@/%@", documentsPath, urlString.MD5];
+    return [NSString stringWithFormat:@"%@/%@", WebViewCachesDirectory, urlString.MD5];
 }
 
 - (void)storeCache:(NSData *)cache atRequest:(NSURLRequest *)request; {
     [cache writeToFile:[self cachePathWithRequest:request] atomically:YES];
 }
+
 
 
 @end
