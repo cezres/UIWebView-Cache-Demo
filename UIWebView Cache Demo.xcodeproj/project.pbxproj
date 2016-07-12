@@ -331,6 +331,7 @@
 		6E1A05151D34BDE5003D83EE /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
 		6E1A05161D34BDE5003D83EE /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
 		6E1A05171D34BDE5003D83EE /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
+		6E1A05911D34C69F003D83EE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -347,6 +348,7 @@
 		6E1A02E21D339712003D83EE = {
 			isa = PBXGroup;
 			children = (
+				6E1A05911D34C69F003D83EE /* README.md */,
 				6E1A02ED1D339713003D83EE /* UIWebView Cache Demo */,
 				6E1A02EC1D339713003D83EE /* Products */,
 			);

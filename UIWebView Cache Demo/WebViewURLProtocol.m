@@ -31,7 +31,11 @@ static NSString *WebViewCachesDirectory;
 @implementation WebViewURLProtocol
 
 + (void)removeAllCache; {
-    
+    if (!WebViewCachesDirectory) {
+        NSString *cachesDirectory = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES)[0];
+        WebViewCachesDirectory = [NSString stringWithFormat:@"%@/WebView", cachesDirectory];
+    }
+    [[NSFileManager defaultManager] removeItemAtPath:WebViewCachesDirectory error:NULL];
 }
 
 
@@ -115,19 +119,20 @@ static NSString *WebViewCachesDirectory;
 - (void) connectionDidFinishLoading:(NSURLConnection *)connection {
     printf("Network\t\t%s\n", [self.request.URL.absoluteString cStringUsingEncoding:NSUTF8StringEncoding]);
     
+    NSData *data = _mutableData;
     if ([self.request.URL.absoluteString rangeOfString:@"webp"].length) {
         UIImage *image = [UIImage sd_imageWithWebPData:_mutableData];
         if (image) {
-            _mutableData = (NSMutableData *)UIImagePNGRepresentation(image);
+            data = UIImagePNGRepresentation(image);
         }
         else {
             printf("Error\t\t%s\n", [self.request.URL.absoluteString cStringUsingEncoding:NSUTF8StringEncoding]);
         }
     }
     
-    [self.client URLProtocol:self didLoadData:_mutableData];
+    [self.client URLProtocol:self didLoadData:data];
     [self.client URLProtocolDidFinishLoading:self];
-    [self storeCache:_mutableData atRequest:self.request];
+    [self storeCache:data atRequest:self.request];
 }
 
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
