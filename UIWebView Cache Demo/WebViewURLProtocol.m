@@ -40,6 +40,9 @@ static NSString *WebViewCachesDirectory;
 
 
 + (BOOL)canInitWithRequest:(NSURLRequest *)request; {
+    
+    printf("%s\n", [request.URL.absoluteString cStringUsingEncoding:NSUTF8StringEncoding]);
+    
     if ([request.URL.absoluteString rangeOfString:@".png"].length || [request.URL.absoluteString rangeOfString:@".jpg"].length) {
         if ([NSURLProtocol propertyForKey:URLProtocolHandledKey inRequest:request]) {
             return NO;
@@ -59,7 +62,6 @@ static NSString *WebViewCachesDirectory;
         if ([URLString rangeOfString:@"?"].length) {
             URLString = [URLString componentsSeparatedByString:@"?"][0];
         }
-        
         
         if ([URLString rangeOfString:@"!"].length) {
             if ([URLString rangeOfString:@"format"].length <= 0) {
@@ -82,15 +84,8 @@ static NSString *WebViewCachesDirectory;
     
     NSData *data = [self cacheForRequest:self.request];
     if (data) {
-        NSString *MIMEType;
-        if ([mutableReqeust.URL.absoluteString rangeOfString:@"jpg"].length) {
-            MIMEType = @"image/jpeg";
-        }
-        else if ([mutableReqeust.URL.absoluteString rangeOfString:@"png"].length) {
-            MIMEType = @"image/png";
-        }
-        printf("Cache\t\t%s\n", [self.request.URL.absoluteString cStringUsingEncoding:NSUTF8StringEncoding]);
-        NSURLResponse *response = [[NSURLResponse alloc] initWithURL:[self.request.URL copy] MIMEType:MIMEType expectedContentLength:data.length textEncodingName:NULL];
+//        printf("Cache\t\t%s\n", [self.request.URL.absoluteString cStringUsingEncoding:NSUTF8StringEncoding]);
+        NSURLResponse *response = [[NSURLResponse alloc] initWithURL:[self.request.URL copy] MIMEType:@"image/png" expectedContentLength:data.length textEncodingName:NULL];
         [self.client URLProtocol:self didReceiveResponse:response cacheStoragePolicy:NSURLCacheStorageNotAllowed];
         [self.client URLProtocol:self didLoadData:data];
         [self.client URLProtocolDidFinishLoading:self];
@@ -117,7 +112,7 @@ static NSString *WebViewCachesDirectory;
 }
 
 - (void) connectionDidFinishLoading:(NSURLConnection *)connection {
-    printf("Network\t\t%s\n", [self.request.URL.absoluteString cStringUsingEncoding:NSUTF8StringEncoding]);
+//    printf("Network\t\t%s\n", [self.request.URL.absoluteString cStringUsingEncoding:NSUTF8StringEncoding]);
     
     NSData *data = _mutableData;
     if ([self.request.URL.absoluteString rangeOfString:@"webp"].length) {
